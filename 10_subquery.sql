@@ -4,8 +4,7 @@
 
 -- This script utilizes subquery to find the total sales amount made by each staff member, 
 -- by joining the sales_transaction and sales_detail tables on the transaction_id column and grouping by staff_id
-SELECT 
-	s.staff_id,
+SELECT s.staff_id,
     s.first_name,
     s.last_name,
     s.position,
