@@ -16,7 +16,8 @@ The project is structured as follows:
 - `07_wallet_tables_mock_data.sql`: SQL script to populate the newly created wallet tables with mock data.
 - `08_validate_constraints.sql`: SQL script to validate the constraints.
 - `09_stored_procedures.sql`: SQL script to create two stored procedures to process each new sale.
-- `10_subquery.sql`: SQL script with subquery to find the total sales amount made by each staff member.
+- `10_create_index.sql`: SQL script to create index on the 'email' column of the 'customer' table
+- `11_subquery.sql`: SQL script with subquery to find the total sales amount made by each staff member.
 - `execute_all.sh`: Bash script to execute the above Python and SQL scripts automatically in the correct order.
 
 The `starting_json` directory contains the JSON files used as the data source.
