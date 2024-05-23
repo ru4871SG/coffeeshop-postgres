@@ -16,14 +16,15 @@ echo "Running Python script..."
 
 # Run SQL scripts
 echo "Running SQL scripts..."
-"$PSQL_PATH" -v ON_ERROR_STOP=1 -U "$PGUSER" -d "$PGDATABASE" -f 02_data_cleaning.sql
-"$PSQL_PATH" -v ON_ERROR_STOP=1 -U "$PGUSER" -d "$PGDATABASE" -f 03_join_tables.sql
-"$PSQL_PATH" -v ON_ERROR_STOP=1 -U "$PGUSER" -d "$PGDATABASE" -f 04_alter_data_types_and_pkeys.sql
-"$PSQL_PATH" -v ON_ERROR_STOP=1 -U "$PGUSER" -d "$PGDATABASE" -f 05_add_relationships.sql
-"$PSQL_PATH" -v ON_ERROR_STOP=1 -U "$PGUSER" -d "$PGDATABASE" -f 06_create_wallet_tables.sql
-"$PSQL_PATH" -v ON_ERROR_STOP=1 -U "$PGUSER" -d "$PGDATABASE" -f 07_wallet_tables_mock_data.sql
-"$PSQL_PATH" -v ON_ERROR_STOP=1 -U "$PGUSER" -d "$PGDATABASE" -f 08_validate_constraints.sql
-"$PSQL_PATH" -v ON_ERROR_STOP=1 -U "$PGUSER" -d "$PGDATABASE" -f 09_stored_procedures.sql
-"$PSQL_PATH" -v ON_ERROR_STOP=1 -U "$PGUSER" -d "$PGDATABASE" -f 10_subquery.sql
+"$PSQL_PATH" -v ON_ERROR_STOP=1 -U "$DB_USER" -d "$DB_NAME" -f 02_data_cleaning.sql
+"$PSQL_PATH" -v ON_ERROR_STOP=1 -U "$DB_USER" -d "$DB_NAME" -f 03_join_tables.sql
+"$PSQL_PATH" -v ON_ERROR_STOP=1 -U "$DB_USER" -d "$DB_NAME" -f 04_alter_data_types_and_pkeys.sql
+"$PSQL_PATH" -v ON_ERROR_STOP=1 -U "$DB_USER" -d "$DB_NAME" -f 05_add_relationships.sql
+"$PSQL_PATH" -v ON_ERROR_STOP=1 -U "$DB_USER" -d "$DB_NAME" -f 06_create_wallet_tables.sql
+"$PSQL_PATH" -v ON_ERROR_STOP=1 -U "$DB_USER" -d "$DB_NAME" -f 07_wallet_tables_mock_data.sql
+"$PSQL_PATH" -v ON_ERROR_STOP=1 -U "$DB_USER" -d "$DB_NAME" -f 08_validate_constraints.sql
+"$PSQL_PATH" -v ON_ERROR_STOP=1 -U "$DB_USER" -d "$DB_NAME" -f 09_stored_procedures.sql
+"$PSQL_PATH" -v ON_ERROR_STOP=1 -U "$DB_USER" -d "$DB_NAME" -f 10_create_index.sql
+"$PSQL_PATH" -v ON_ERROR_STOP=1 -U "$DB_USER" -d "$DB_NAME" -f 11_subquery.sql
 
 echo "All scripts executed successfully."

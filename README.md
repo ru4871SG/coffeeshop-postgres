@@ -1,6 +1,6 @@
 # Coffeeshop Data Cleaning, Structuring, and Modification with PostgreSQL
 
-This repository contains a Python script and multiple SQL scripts that demonstrate my ability to clean, structure, and modify data using PostgreSQL. The input data is in the form of JSON files in the `starting_json` folder, and can be directly imported into a PostgreSQL database using SQLAlchemy.
+This repository contains a Python script and multiple SQL scripts that demonstrate my ability to clean, structure, modify, and optimize data using PostgreSQL. The input data is in the form of JSON files in the `starting_json` folder, and can be directly imported into a PostgreSQL database using SQLAlchemy.
 
 
 ## Project Structure
