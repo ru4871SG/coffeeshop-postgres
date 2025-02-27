@@ -2,6 +2,7 @@
 
 This repository contains a Python script and multiple SQL scripts that demonstrate my ability to clean, structure, modify, and optimize data using PostgreSQL. The input data is in the form of JSON files in the `starting_json` folder, and can be directly imported into a PostgreSQL database using SQLAlchemy.
 
+I also included dbt model [enhanced_customer.sql](models/enhanced_customer.sql) that you can find inside the `models` folder.
 
 ## Project Structure
 
@@ -19,6 +20,7 @@ The project is structured as follows:
 - `10_create_index.sql`: SQL script to create index on the 'email' column of the 'customer' table
 - `11_subquery.sql`: SQL script with subquery to find the total sales amount made by each staff member.
 - `execute_all.sh`: Bash script to execute the above Python and SQL scripts automatically in the correct order.
+- `models/enhanced_customer.sql`: dbt model that contains the SQL code to create a materialized table with enhanced customer data (with new columns).
 
 The `starting_json` directory contains the JSON files used as the data source.
 
@@ -33,6 +35,8 @@ Alternatively, you can run the Python and SQL scripts one-by-one if you don't wa
 2. You can use pgAdmin or psql to execute the SQL scripts in the order they are numbered, starting from `02_data_cleaning.sql`. Each script performs a specific task and they should be run in sequence to ensure the data is cleaned, structured, and transformed correctly.
 
 After you create the stored procedures with `09_stored_procedures.sql`, you can test the procedures by using this statement => ```CALL public.process_sale(product_id, quantity, customer_wallet_id, outlet_wallet_id, staff_id);``` (replace the parameters with the existing numbers in the tables)
+
+As for the dbt model, you can simply use `dbt run` to create the materialized table with enhanced customer data.
 
 ## Entity Relationship Diagram (ERD)
 
