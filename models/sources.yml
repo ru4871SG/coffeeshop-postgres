@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: public
+    database: dbtruddy 
+    schema: public
+    tables:
+      - name: customer
+        description: "Customer information table"
+        columns:
+          - name: customer_id
+            description: "Primary key, unique identifier for each customer"
+          - name: customer_name
+            description: "Full name of the customer"
+          - name: email
+            description: "Customer's email address"
+          - name: reg_date
+            description: "Registration date of the customer"
+          - name: card_number
+            description: "Customer's card number"
+          - name: date_of_birth
+            description: "Customer's birth date"
+          - name: gender
+            description: "Customer's gender"
