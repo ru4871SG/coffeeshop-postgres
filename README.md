@@ -46,3 +46,6 @@ The `final_erd.pgerd` file contains the Entity Relationship Diagram (ERD) for th
 ## Original Dataset
 
 The input data (the JSON files in the `starting_json` folder) originally came from [IBM Coffee Shop sample data](https://community.ibm.com/community/user/businessanalytics/blogs/steven-macko/2019/07/12/beanie-coffee-1113), but I've mixed some values and introduced unnecessary characters, creating a 'dirtier' dataset. I did this on purpose, so I can demonstrate my SQL data cleaning abilities in this repo.
+
+## PowerBI Visualization
+I have included [powerbi_coffeeshop_insight.pbix](powerbi/powerbi_coffeeshop_insight.pbix) that visualizes the important metrics from the final tables and dbt model that I have created in this repository. You can open this .pbix file using PowerBI Desktop.
